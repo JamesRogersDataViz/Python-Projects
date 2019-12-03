@@ -1,0 +1,51 @@
+import os
+import csv
+election_csv = os.path.join("..", "Resources", "election_data.csv")
+
+data = []
+with open(election_csv, newline="") as csvfile:
+    csvreader = csv.reader(csvfile, delimiter=",")
+    for line in csvreader:
+    	data.append(line)
+ 
+data.pop(0)
+total = 0
+for line in data:
+   total += 1
+   
+print("Total Votes:", total)
+
+names = {'Khan':0, 'Correy':0, 'Li':0, "O'Tooley":0 }
+for c in data:
+    i = c[2]
+    if i in names:
+        names[i] += 1
+
+k = str(names['Khan'])
+kv = round(int(k) / int(total), 3)
+percent = (str(kv * 100)) + "%"
+print('Khan: ', percent, k)
+
+r = str(names['Correy'])
+rv = round(int(r) / int(total), 3)
+percent = (str(rv * 100)) + "%"
+print('Correy: ', percent, r)
+
+m = str(names['Li'])
+mv = round(int(m) / int(total), 3)
+percent = (str(mv * 100)) + "%"
+print('Li: ', percent, m)
+
+o = str(names["O'Tooley"])
+ov = round(int(o) / int(total), 3)
+percent = (str(ov * 100)) + "%"
+print("O'Tooley: ", percent, o)
+
+most_votes = 0
+winner = ''
+
+for j in names:
+    if names[j] > most_votes:
+        most_votes = names[j]
+        winner = j
+print ("Winner: " + winner)
