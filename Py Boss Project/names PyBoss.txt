@@ -1,0 +1,11 @@
+Emp ID,first_name,last_name,DOB,SSN,State
+1,John,Doe,02/24/1991,***-**-9755,NC
+2,James,Smith,11/19/1978,***-**-9756,VT
+3,Earl,Jones,01/08/1990,***-**-9757,MN
+4,Bobby,Hunter,08/11/1976,***-**-9758,CO
+5,Jose,Hernandez,07/22/1976,***-**-9759,AZ
+6,Dan,Pena,01/31/1978,***-**-9760,ND
+7,Gaby,Knight,03/08/1994,***-**-9761,LA
+8,Robin,Carter,10/14/1972,***-**-9762,TX
+9,Michelle,Richers,02/08/1984,***-**-9763,IL
+10,Kimberly,Grant,08/05/1972,***-**-9764,AR
